@@ -28,8 +28,8 @@ for i in data:
     # #resize the photo and set it in the tamplate
     # img = Image.open(BytesIO(response.content))
 
-    #open local photo
-    img = Image.open("../images/{0}.png".format(i['Student ID']))
+    #open downloaded photo 
+    img = Image.open("{0}.png".format(i['Student ID']))
 
     basewidth = 1150
     wpercent = (basewidth/float(img.size[0]))
